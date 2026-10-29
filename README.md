@@ -1,6 +1,6 @@
 # Reproducing HAWQ-V3: Hessian-Based Mixed-Precision Quantization
 
-A reproduction of [HAWQ-V3](https://arxiv.org/abs/2011.10680) on CIFAR-10 with ResNet-18, built for ESE 5390 (Hardware/Software Co-Design for Machine Learning) at the University of Pennsylvania, Fall 2025.
+A reproduction of [HAWQ-V3](https://arxiv.org/abs/2011.10680) on CIFAR-10 with ResNet-18.
 
 Uniform 4-bit quantization usually costs a lot of accuracy, because some layers are far more sensitive to quantization noise than others. HAWQ-V3 measures each layer's sensitivity from its Hessian and keeps the sensitive layers at higher precision while dropping the robust ones lower.
 
@@ -17,5 +17,3 @@ Targeting a 41% smaller model cost only 0.95 points of accuracy (78.70% to 77.75
 ## Report
 
 [HAWQ-V3_Reproduction_Report.pdf](HAWQ-V3_Reproduction_Report.pdf)
-
-Team: Maanas Goel, Praise Ndlovu, Nikolaos Rapanis, Sophia Fu
